@@ -2,7 +2,7 @@ import _ from 'lodash';
 import myName from './myName';
 import { functionOne, functionTwo } from './myModule';
 import './style.css';
-import Icon from './icon.svg';
+import Icon from './icon.png';
 
 function component() {
   const element = document.createElement('div');
