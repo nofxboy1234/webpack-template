@@ -7,7 +7,7 @@ const json5 = require('json5');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  mode: 'production',
+  mode: 'development',
   // entry: './src/index.js',
   entry: {
     index: './src/index.js',
