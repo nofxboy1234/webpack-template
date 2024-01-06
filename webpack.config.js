@@ -19,7 +19,13 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     clean: true,
   },
+  optimization: {
+    runtimeChunk: 'single',
+  },
   devtool: 'inline-source-map',
+  devServer: {
+    static: './src',
+  },
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/template.html',
