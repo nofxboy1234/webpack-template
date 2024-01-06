@@ -17,8 +17,8 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/index.html',
       // title: 'Webpack 5 Video Tutorials',
-      filename: 'index.html',
-      inject: 'body',
+      // filename: 'index.html',
+      // inject: 'body',
       // inject: 'head',
       // scriptLoading: 'defer',
     }),
