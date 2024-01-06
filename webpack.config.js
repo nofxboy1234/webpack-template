@@ -1,7 +1,10 @@
 const path = require('path');
+
 const toml = require('toml');
 const yaml = require('yamljs');
 const json5 = require('json5');
+
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   mode: 'production',
@@ -10,6 +13,16 @@ module.exports = {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: './src/index.html',
+      // title: 'Webpack 5 Video Tutorials',
+      filename: 'index.html',
+      inject: 'body',
+      // inject: 'head',
+      // scriptLoading: 'defer',
+    }),
+  ],
   module: {
     rules: [
       {
