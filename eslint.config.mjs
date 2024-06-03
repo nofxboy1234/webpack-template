@@ -29,4 +29,7 @@ export default [
       '@stylistic/quotes': ['error', 'single'],
     },
   },
+  {
+    ignores: ['**/node_modules/', '**/dist/', 'package-lock.json'],
+  },
 ];
