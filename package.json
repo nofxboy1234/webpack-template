@@ -13,7 +13,8 @@
     "eslint-check": "npx eslint .",
     "prettier-check": "npx prettier --check .",
     "eslint-fix": "npx eslint . --fix",
-    "prettier-fix": "npx prettier --write ."
+    "prettier-fix": "npx prettier --write .",
+    "prettier-check-eslint": "npx eslint-config-prettier src/index.js"
   },
   "keywords": [],
   "author": "Dylan Palmboom",
