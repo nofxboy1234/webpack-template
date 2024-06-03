@@ -1,16 +1,18 @@
 {
   "name": "webpack-template",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "Webpack template repo with commonly used dependencies",
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve --open --config webpack.dev.js",
     "watch": "webpack --watch --config webpack.dev.js",
-    "build": "webpack --config webpack.prod.js"
+    "dev": "webpack --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js",
+    "deploy": "git subtree push --prefix dist origin gh-pages"
   },
   "keywords": [],
-  "author": "",
+  "author": "Dylan Palmboom",
   "license": "ISC",
   "devDependencies": {
     "css-loader": "^6.8.1",
