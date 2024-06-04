@@ -13,12 +13,14 @@
     "eslint-check": "npx eslint .",
     "prettier-check": "npx prettier --check .",
     "eslint-fix": "npx eslint . --fix",
-    "prettier-fix": "npx prettier --write ."
+    "prettier-fix": "npx prettier --write .",
+    "babel-transpile": "npx babel src/input.js --out-file src/output.js"
   },
   "keywords": [],
   "author": "Dylan Palmboom",
   "license": "ISC",
   "devDependencies": {
+    "@babel/cli": "^7.24.6",
     "@babel/core": "^7.24.6",
     "@babel/preset-env": "^7.24.6",
     "@eslint/js": "^9.4.0",
